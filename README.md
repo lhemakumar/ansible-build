@@ -26,5 +26,8 @@ ansible all -m apt -a "name=snap state=latest" --become --ask-become-pass
 
 ansible all -m apt -a "upgrade=dist" --become --ask-become-pass
 
+ansible-playbook --ask-become-pass install_apache.yml
+
+
 
 
