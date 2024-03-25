@@ -13,3 +13,5 @@ ansible all -m gather_facts
 ansible all --list-hosts
 
 ansible all -m gather_facts --limit 192.168.0.17
+
+ansible all -m apt -a update_cache=true --become --ask-become-pass
