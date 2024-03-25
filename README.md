@@ -24,5 +24,7 @@ ansible all -m apt -a name=snap --become --ask-become-pass
 
 ansible all -m apt -a "name=snap state=latest" --become --ask-become-pass
 
+ansible all -m apt -a "upgrade=dist" --become --ask-become-pass
+
 
 
