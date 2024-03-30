@@ -18,16 +18,14 @@ alias ssha='eval $(ssh-agent) && ssh-add'
 
 ssh-add ~/.ssh/ansible
 
-# ansible-build
-
-# ansible guide
+# ansible installation & guide steps
 
 https://docs.ansible.com/ansible/2.8/index.html
 
 # ansible best practices
 https://docs.ansible.com/ansible/2.8/user_guide/playbooks_best_practices.html#best-practices
 
-Anisible installation steps
+# ansible-build module 
 
 Basic command : To ping the remote host
 
