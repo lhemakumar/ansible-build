@@ -1,5 +1,5 @@
 [Node1]
-192.168.0.17
+VmNode1 ansible_host=192.168.0.17
 
 [Node1:vars]
 ansible_user=couser
