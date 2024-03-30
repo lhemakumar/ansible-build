@@ -20,6 +20,13 @@ ssh-add ~/.ssh/ansible
 
 # ansible-build
 
+# ansible guide
+
+https://docs.ansible.com/ansible/2.8/index.html
+
+# ansible best practices
+https://docs.ansible.com/ansible/2.8/user_guide/playbooks_best_practices.html#best-practices
+
 Anisible installation steps
 
 Basic command : To ping the remote host
