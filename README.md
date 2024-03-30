@@ -1,3 +1,23 @@
+# Basic Unix commands to create SSH-Key and copy public keys into  nodes
+
+ssh-keygen -t ed25519 -C "Ansible"
+
+ssh-copy-id -i ~/.ssh/id_ed25519.pub couser@192.168.0.18
+
+ssh-copy-id -i ~/.ssh/ansible.pub couser@192.168.233.128
+
+ssh -i ~/.ssh/ansible couser@192.168.0.18
+
+ssh -i ~/.ssh/ansible couser@192.168.233.128
+
+eval $(ssh-agent)
+
+Ps aux | grep 1785
+
+alias ssha='eval $(ssh-agent) && ssh-add'
+
+ssh-add ~/.ssh/ansible
+
 # ansible-build
 
 Anisible installation steps
