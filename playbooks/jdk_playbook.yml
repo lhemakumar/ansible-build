@@ -1,0 +1,4 @@
+---
+
+- import_playbook: jdk_pre.yml
+- import_playbook: jdk_install.yml

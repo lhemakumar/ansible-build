@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: true
+  tasks:
+   - name : Install JDK package (Ubuntu/Debian)
+     apt:
+       name: "openjdk-17-jdk"
+       state: present
+       update_cache: yes
+     when: ansible_distribution in ["Ubuntu","Debian"]
+
+   - name : Install JDK package (CentOS/RHEL)
+     yum:
+       name: "java-17-openjdk"
+       state: present
+       update_cache: yes
+     when: ansible_os_family in ["RedHat"]
